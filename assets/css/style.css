@@ -427,8 +427,15 @@ a {
   background: #2e2100;
 }
 
-.feedback-item {
+.feedback-list {
   display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -454,7 +461,8 @@ a {
   line-height: 1.86;
 }
 
-.feedback-item .info .dots {
+.feedback-item .dots {
+  gap: 6px;
   display: flex;
   margin-top: 28px;
 }
